@@ -18,8 +18,8 @@ document.addEventListener("keydown", function (e) {
 function moveDodgerRight() {
     const rightNumbers = dodger.style.left.replace("px", "");
     const left = parseInt(rightNumbers, 10);
-  console.log(left);
-    if (left < 359) {
+
+    if (left < 360) {
       dodger.style.left = `${left + 1}px`;
     }
 
